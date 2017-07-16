@@ -8,5 +8,8 @@ with open('spritz.txt') as inputfile:
 
 print("HALLO DIT HEB IK NET VERANDERD OP VINCENTS PC!")
 
+print("HALLO DIT HEB IK NET VERANDERD OP MIJN EIGEN PC")
+
+print("OHJA, VINCENT IS DIK.")
 
 print (results)
