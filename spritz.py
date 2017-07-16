@@ -12,4 +12,6 @@ print("HALLO DIT HEB IK NET VERANDERD OP MIJN EIGEN PC")
 
 print("OHJA, VINCENT IS DIK.")
 
+print("MERGE FOUT 1")
+
 print (results)
