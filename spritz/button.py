@@ -1,4 +1,4 @@
-from tkinter import Tk, Label, W, N, Entry, Button
+from tkinter import Tk, Label, W, N, Entry, Button, filedialog
 class request_window:
     def __init__(self,text):
         self.root_req = Tk()
@@ -42,3 +42,19 @@ class request_window:
     def cancel(self,event = None):
         self.result = False
         self.root_req.destroy()
+
+def select_file(title):
+    ftypes = [
+        ('txt files', '*.txt'),
+        ('All files', '*'),
+    ]
+
+    root_sel = Tk()
+    root_sel.withdraw()
+    root_sel.title(title)
+    filename = filedialog.askopenfile(filetypes=ftypes,initialdir = "./datafiles/")
+    root_sel.destroy()
+    try:
+        return(filename.name)
+    except:
+        raise KeyError('\n\n\tFile selection cancelled by user.\n\n')

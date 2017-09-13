@@ -1,0 +1,574 @@
+Abstract
+Single-molecule methods have revolutionised the way that biological questions are tackled.
+Contributions to the field of biophysics from biological nanopore-based methods are reviewed.
+1. Introduction
+Single-molecule methods have revolutionised the way that biological questions are tackled.[1, 2]
+Single-molecule techniques can resolve the distribution and temporal order of events including
+transient intermediates, pauses, multiple pathways, and even reverse steps that would otherwise be
+obscured in ensemble studies. By observing one molecule at a time, the averaging of signals from an
+ensemble of many molecules can be avoided to reveal the distribution and individual dynamics of
+sub-populations. In the 15 years since nanopore detection first emerged the method has established
+itself as a sensitive complementary technique for examining biological interactions at the singlemolecule
+level. A wide range of analytes have been examined including; nucleic acids, peptides, and
+polymers.[3, 4] The breadth of these applications is ever expanding, helped by the fact that biological
+nanopores can be engineered using modern chemical and biological techniques to tune their suitability
+to a particular application. For example, there continues to be much excitement surrounding the
+application of nanopore-based methods for sequencing DNA on the single-molecule level.[5, 6]
+Although recent advances in nanofabrication techniques have expanded the field to include man-made
+solid-state nanopores,[7] this review will focus on the application of single-molecule methods that
+exploit the nanometre dimensions of the α-haemolysin protein pore for studying the structure, activity
+and interactions of biomolecules.
+2. Background
+2.1 The α-haemolysin nanopore
+α-haemolysin (αHL) is toxin protein secreted by the pathogen Staphylococcus aureus as a 33.2 kDa
+water-soluble monomer. αHL monomers spontaneously self-assemble in phospholipid bilayers to
+form heptameric mushroom-shaped protein pores (Figure 1).[8] αHL displays its exotoxic activity by
+binding to, and forming transmembrane channels in a wide range of mammalian cells including
+erythrocytes, lymphocytes and endothelial cells.[9] The cap opening is approximately 26 Å in diameter
+and leads into a larger inner vestibule. A 15 Å diameter constriction connects this vestibule to the β-
+barrel transmembrane stem, which consists of 14 antiparallel strands and has an internal diameter of
+22 Å.
+Page 2 of 26
+Figure 1. A) Side view of the α-haemolysin heptameric complex showing the approximate location of
+the lipid bilayer (αHL, PDB ID: 7AHL).9 The complex is ∼100 Å in both height and diameter. B)
+View of α-haemolysin from the cisentrance to the pore. C) and D) Cross-sectional and space-filling
+models of α-haemolysin showing the internal diameter of the pore channel at different locations. Each
+colour represents a different α-haemolysin monomer subunit.
+2.2 The principle of single-molecule nanopore detection
+αHL can serve as a detection element for examining single-molecules. In a typical experimental setup,
+a thin insulating polymer sheet containing a small aperture (between 50-1000 m in diameter) is
+sandwiched between two wells containing an electrolyte buffer.[10] A planar lipid bilayer membrane is
+then formed in this aperture, either by ‘painting’ lipid over the aperture,[11] or by lowering and raising
+a lipid monolayer floating on the surface of the buffer solution over the aperture opening.[12] Each
+electrolyte chamber contains an electrode connected to a patch-clamp amplifier, a piece of equipment
+that earned Erwin Neher and Bert Sakmann the Nobel Prize for Physiology or Medicine in 1991 for
+their pioneering work in the field of electrophysiology.[13] [14] Since a lipid bilayer is electrically
+insulting, no electrical current can flow between the two electrolyte chambers when a bilayer is
+formed (a GΩ membrane resistance can be obtained routinely). A trace amount of αHL is then added
+to either of the electrolyte chambers. Pore insertion into the suspended membrane is a stochastic event
+and can take anything from a few seconds to several hours to occur, which often requires much
+patience on the part of the researcher! In favourable circumstances, then a state where a single protein
+channel is inserted in the membrane can be obtained as shown in the generic experimental set-up
+shown in Figure 2. Under these conditions and upon the application of a transmembrane potential
+difference (voltage), a stable measurable electrical current arises from the passage of ions through the
+Page 3 of 26
+channel pore (Figure 2A). Analyte molecules may modulate the ionic current flowing through the
+protein channel. For example, a large molecule passing through the pore will reduce the magnitude of
+the ionic current more than a smaller molecule. Thus, the current signature (Figure 2B) obtained from
+a single-channel current recording can be used to identify single molecules from the distribution,
+duration and ordering of events. Due to the random nature of events occurring on the single-molecule
+level, the approach is sometimes referred to as ‘stochastic sensing’.[3],[16]
+Figure 2. A platform for single-molecule experiments. Experimental setup with a single α-haemolysin
+protein pore embedded in a suspended phospholipid bilayer. A) When a transmembrane voltage (V) is
+applied across the bilayer, a stable current (I) arises from the passage of ions through the pore
+channel. B) Transient ionic current blockades corresponding to the translocation of negatively charged
+single-stranded oligonucleotides through the nanopore.16 The duration of the translocation (dwell
+time), toff, and the inter-event duration, ton, are indicated. Since the average frequency of the current
+blockades is proportional to the concentration of the analyte [c], the method gives direct access to the
+rate constant of capture/association (kon=1/ton[c]), and the rate constant of translocation/dissociation,
+(koff=1/toff).
+3. Manipulation and recognition of nucleic acids using nanopores
+Single oligonucleotide molecules have been examined using a wide range of methods such as atomic
+force microscopy, fluorescence microscopy, and optical tweezers.[2] Distinct from other singlemolecule
+methods, nanopore detectors facilitate the direct investigation of oligonucleotides without
+Page 4 of 26
+the need for chemical modifications, amplification, or attachment to a solid surface. Nonetheless,
+chemical modification of the analytes and the use of engineered protein pores further broadens the
+utility of the approach. Taken together, these approaches are able to provide insight into the sequence,
+structural dynamics and thermodynamics of oligonucleotide primary, secondary and tertiary
+structures.
+3.1 Structure and hybridisation recognition in unmodified oligonucleotides
+Kasianowicz and co-workers were the first to demonstrate that single-stranded RNA and DNA
+molecules can be driven through a single αHL nanopore by the electric field created upon the
+application of a transmembrane potential difference (voltage) (Figure 2B).[2, 15] The transient ion
+current blockages resulting from the passage of oligonucleotides through the pore channel were used
+to measure the length of oligonucleotides since the duration of passage of each molecule was
+proportional to the length of the polymer. Using this pioneering methodology, Meller and co-workers
+were able to calculate the speed of DNA translocation through the pore.[6] Polymers longer than the
+length of the pore translocated at an average constant velocity, whilst the translocation speed of
+shorter polymers increased with decreasing length. The speed of translocation increased non-linearly
+as the transmembrane potential was increased.
+In subsequent work, the approach was extended to investigate different DNA block co-polymers using
+more advanced signal analyses.[16] The translocation of each polymer gave unique distributions of the
+translocation duration and blockage currents, which could then be used to distinguish between
+different 100-mer DNA block co-polymers in a mixed sample. The temperature dependence of the
+event characteristics suggested that the distinguishing features of different oligonucleotides arose
+from the secondary structures of the oligonucleotides studied.
+As we have seen, the lumen of the wild-type αHL is wide enough to accommodate the translocation of
+single-stranded oligonucleotides. Although dsDNA is too large to translocate the pore, it can be
+trapped within the wide lumen on the cis-side of the pore (see vestibule in Figure 1C). This has been
+exploited to inspect the unzipping kinetics of individual DNA hairpins under constant force and
+constant loading rate (Figure 3).[17] By employing real-time dynamic voltage control, the applied
+voltage pattern could be tuned to control the rate of DNA unzipping and subsequent translocation
+through the pore. The unzipping times decreased exponentially with the voltage giving a characteristic
+slope that was independent of the duplex region sequence. The magnitude of the voltage required to
+achieve almost instantaneous unzipping upon DNA capture (Figure 3B→D) was found to depend
+strongly on the stability of the duplex region. In an extension of this work, unzipping of dsDNA was
+achieved under an applied transmembrane potential as before (Figure 4A→B). Polymerase chain
+Page 5 of 26
+reaction (PCR) analysis of the DNA content of the solution on both sides of the bilayer proved that
+only one of the two DNA strands was pulled through the protein pore (Figure 4C). The ionic current
+blockage of polynucleotide traversal revealed information about the time-scale of DNA unzipping
+events. Furthermore, a simple kinetic model was used to estimate the unzipping enthalpy barriers and
+the effective charge of the nucleotides within the pore lumen.
+Figure 3. A) to B) Single-stranded DNA hairpin capture. C) to D) Application of an increased
+transmembrane voltage causes the DNA to unzip and translocate through the pore.
+Figure 4. A) to B) Capture of double-stranded DNA with a single-stranded overhang. C) to D)
+Subsequent unzipping of DNA induced at higher transmembrane voltages. Only the longer ssDNA
+strand was seen to translocate the pore upon unzipping.17–20
+G-quadruplexes are tertiary DNA structures that form in guanine-rich nucleotide sequences identified
+in numerous gene promoter sequences and within telomeric DNA. As such, they are potential drug
+targets for cancer and other genetic diseases.[23] Gu and co-workers have explored the activity of
+cations in regulating the folding and unfolding of the G-quadruplex formed by the thrombin-binding
+aptamer (GGTTGGTGTGGTTGG) using the nanopore approach (Figure 5A).[21] The nanopore
+current signature showed that G-quadruplex formation is cation-selective, and the order of the ability
+of ions to stabilise G-quadruplex was found to be K+>NH4
++ ~ Ba2+>Cs ~ Na+ >Li+. G-quadruplex was
+not detected in the presence of Mg2+ and Ca2+.
+Page 6 of 26
+Figure 5. A) DNA G-quadruplex capture, unfolding and channel translocation under a driving
+potential.22 B) Ion current signals can be used to identify Watson–Crick base pairs, mismatches and
+unnatural base pairs at the termini of single, blunt DNA hairpin molecules captured within a
+nanopore.18, 19, 23
+3.2 Sequence recognition in unmodified oligonucleotides
+There has been an increasing focus on DNA sequencing by single-molecule methods since the
+completion of the Human Genome Project. Advances in sequencing techniques are expected to help to
+achieve large-scale, systematic sequencing of cancer genomes, unravel the genetic basis of disease
+and guide the development of personalised healthcare.[24] To achieve this grand aim, time- and costefficient
+sequencing methods are required. Nanopore-based methods offer some promise in this regard
+because the restricted size of a nanopore channel ensures that the native order of the nucleotides is
+retained as a strand of DNA threads through the nanopore. It was proposed that kilobase-length
+single-stranded genomic DNA could be threaded through the pore, and its sequence revealed by the
+ionic current signals without the need for fluorescent labels or amplification.[5]
+Early investigations of oligonucleotide recognition using αHL found that polycytidylic (polyC),
+polyadenylic acid (polyA), and polyuridylic acid (polyU) RNA homopolymers could be characterised
+using ion current amplitudes and dwell times.[25] In addition, the approach could distinguish between
+polyC and the polyA segments within a single RNA molecule. When A50 and C50 passed through the
+nanopore, different current levels were observed. Similarly, when RNA block co-polymers A25C50,
+C50A25, A25C50 and C50A25 passed through the nanopore, two distinct current levels were observed
+within each translocation event that corresponded to the A and C regions in each molecule.[26] It was
+also possible to identify the orientation of oligonucleotides as they translocate through a single αHL
+pore (3’-leading vs. 5’-leading). 3’→5’ translocation of polyC RNA through αHL resulted in a
+significantly higher current blockage compared with 5’→3’ translocation, and threading was preferred
+from the 3’-end compared to the 5’-end. Similarly, when capturing ssDNA hairpins (Figure 4A to
+4B), the residual current (IDNA/Ifree channel) for 3’→5’ ssDNA threading from the cis-side was lower
+Page 7 of 26
+compared with 5’→3’ threading (9% vs. 12% respectively).[27] Voltage-driven 3’→5’ capture from
+the cis-side of the pore was also faster than 5’→3’ capture. Interestingly, escape from the pore under
+zero applied potential was slower for 5’→3’ unthreading than in the opposite direction (Figure 4B to
+4A). Molecular dynamics simulations suggested that base tilting during threading may have been the
+origin of this difference.
+Ghadiri and co-workers have pushed oligonucleotide recognition using unmodified αHL to its limits
+by demonstrating recognition of a single base in an ssDNA molecule. This was achieved by capturing
+DNA hairpins on the cis-side of an αHL pore under an applied electric field (Figure 3B). Initially,
+DNA hairpins with different polyA or polyC segments were discriminated using ion currents. After
+extensive optimisation of the hairpin designs, it was found that a single adenosine base could be
+distinguished from cytosine at a specific position within a region of polyC ssDNA.[28] To date, this
+study still represents the closest that anyone has come to reading the sequence of unmodified ssDNA
+using wild-type αHL ion current recordings.
+Discrimination among individual Watson-Crick base pairs at the termini of single DNA and RNA
+hairpin molecules has also been investigated using single nanopores (Figure 5B). Hundreds of hairpin
+molecules could be examined, classified and quantified in a few minutes, and revealed that it was
+possible to resolve single-nucleotide and single-base pair differences between otherwise identical
+DNA hairpin molecules.[22] Computational pattern analysis of ion current recordings enabled each of
+the different combinations of Watson-Crick base pairs and their orientation to be identified.[18, 19] The
+work was extended to examine the behaviour of terminal base pairs upon substitution of thymine for
+the unnatural base fluorotoluene. Kinetic analysis suggested that the characteristic signals caused by
+each of the different combinations of base-pairs were dependent on the stability of the terminal base
+pair and its nearest neighbour.
+Clearly, there have been many impressive examples of direct recognition of unmodified
+oligonucleotides. However, a practical nanopore-based method for sequencing unmodified DNA
+using αHL remains elusive. Two barriers to this aim are the rapid translocation speed of unmodified
+oligonucleotides and the fundamental limitations of ion current recognition. This has motivated
+researchers to explore alternative avenues of nanopore research, particularly those that exploit
+modified oligonucleotides and engineered nanopores.
+3.3 Exploitation and recognition of modified oligonucleotides
+Advances in automated synthesis, chemical, and biochemical methods provide access to a plethora of
+oligonucleotide modifications with an extensive range of applications that span the physical,
+Page 8 of 26
+biological and medical sciences.[29] Such modified oligonucleotides have provided new opportunities
+for expanding the capabilities of αHL sensing technologies.
+One frequently employed oligonucleotide modification is biotinylation. Single biotinylated
+oligonucleotides can be captured within a nanopore when capped with avidin/streptavidin proteins
+(Figure 6A to 5B). These proteins are too large to translocate the pore and thus serve as ‘stopper’ and
+allowing the read-time of current recordings to be increased. PolyA, polyC and polyT ssDNA copolymers
+captured in this way could be distinguished from each other due to their distinct ion
+currents.[8] As in earlier studies, ion current blockages were found to be orientation dependent, giving
+different currents when threaded from the 3’- or the 5’-direction. The different homopolymers could
+be distinguished most easily when threaded from the 5’-end. In a recent tour de force study, Bayley
+and co-workers systematically scanned the recognition of streptavidin-capped ssDNA strands
+captured within wild-type and mutant αHL pores.[31]
+Figure 6. A nanosensor for sequence-specific detection of an ssDNA analyte across a bilayer. A)→B)
+A biotinylated DNA probe with a terminal avidin anchor is captured within a nanopore under an
+applied transmembrane potential. The 3′-end of the DNA probe is exposed on the trans side of the
+pore. B)→C) When the analyte DNA is present, it can specifically bind to the protruding
+complementary single-stranded DNA probe to furnish a fully interlocked αHL⋅DNA rotaxane
+complex. C)→D) The position of the threaded strand can be flipped back and forth by changing the
+sign of the applied potential. D)→A) Higher potentials force the analyte DNA to dissociate from the
+probe DNA and free the pore.30
+Page 9 of 26
+Independent studies arising from both the Marziali and the Ghadiri laboratories took advantage of this
+‘stoppering’ approach to form DNA ‘rotaxanes’ of transmembrane pores (Figures 5 to 7).[30, 32] A
+rotaxane is a mechanically-interlocked molecular architecture formed when one molecule is threaded
+through the centre of another ring-shaped molecule. In this case, the thread is the ssDNA, the ring is
+the αHL protein pore, and the stoppers are avidin/streptavidin and dsDNA.[33] Trapping the threaded
+DNA in this manner facilitates multiple ion current readings of the same DNA molecule.
+Marziali used such a device to study the relationship between duplex dissociation time and DNA
+hybridisation energy at the single-molecule level.[30] The ssDNA probe contained a specific
+recognition sequence at the 3’-end, and a biotin modification at the 5’-end bound to an avidin stopper.
+By applying a transmembrane potential, the ssDNA conjugate was threaded through the pore,
+exposing the 3’-end of the DNA probe on the opposite side of the membrane (Figure 6A to 5B). When
+captured in this way, the probe sequence was free to bind a complementary oligonucleotide sequence
+and form a rotaxane complex (Figure 6C).[34] Reversal of the applied potential made the DNA probe
+withdraw from the pore (Figure 6D), and under a high enough potential, this force caused the analyte
+DNA sequence to dissociate from the DNA probe (Figure 6D to 5A). The time required for DNA
+unzipping could be used to identify different oligonucleotides and single-base mismatches.
+In Ghadiri’s variation of the rotaxane approach (Figure 7), DNA-PEG co-polymers were trapped
+within the pore using a streptavidin stopper on one side of the membrane and a dsDNA stopper on the
+other. As before, the position of the DNA-PEG co-polymer could be flipped back and forth by
+changing the sign of the transmembrane potential, but this time, different ionic currents were recorded
+depending upon whether the DNA or the PEG segments of the co-polymer were occupying the pore
+channel. The smaller cross-section of PEG means that it blocks the ionic current flowing through the
+pore less than an oligonucleotide (Figure 7).[32]
+Page 10 of 26
+Figure 7. DNA–PEG co-polymer rotaxanes assembled with dsDNA and biotin–streptavidin stoppers.
+Distinct current–voltage (I–V) traces were obtained depending on the direction of threading through
+the pore.32
+This simple recognition between PEG and DNA was extended in later work by carefully tuning the
+length of the DNA and PEG regions such that the small changes in the proportion of DNA to PEG
+would result in a change in the ionic current flowing through the pore (Figure 8).[35] The approach was
+sufficiently sensitive to allow the length of the double-stranded DNA region to be measured with
+single-base precision over a 10-base reading window. Further analysis of the signal-to-noise ratios
+revealed an maximum spatial resolution of 1.4 Å. Later, this supramolecular device was used to
+monitor DNA polymerase-catalysed nucleotide extension with unprecedented single-base resolution
+at the single-molecule level (see Figure 15).
+Page 11 of 26
+Figure 8. Supramolecular nanopore-based device that can measure the length of a single molecule of
+DNA with ångström-scale resolution. Variation of the length of the dsDNA duplex region (+0 to +8
+bases) changes the proportion of DNA to PEG threaded through the β-barrel of the αHL pore. The
+differences in the length of the coloured DNA molecule manifest themselves in the characteristic
+current–voltage (I–V) trace of each complex. The largest and most reproducible current difference
+between the four complexes was obtained at +40 mV (vertical grey dotted line).35
+Recently, Howorka and Mitchell chemically modified ssDNA with a peptide tag. This increased the
+cross-sectional diameter of the DNA, and was found to slow down the speed of translocation through
+the pore (Figure 9A). The current signatures of peptide-tagged DNA depended on the length, charge
+and size of the tag. This facilitated the identification of up to two different bases during the
+translocation of a single strand of DNA.[36]
+Page 12 of 26
+Figure 9. A) Translocation of an ssDNA molecule tagged with a peptide.36 B) Modified αHL pore
+with an ssDNA sequence attached to a mutant cysteine residue.37, 38
+3.4 Recognition of mononucleotides using engineered nanopores
+One of the major advantages of biological nanopores such as αHL, is that the protein sequence can be
+readily engineered using molecular biology and subsequently chemically modified.[39, 40]. For
+example, a short ssDNA was tethered to the genetically modified heteroheptameric αHL pore to form
+a ‘DNA-nanopore’ biosensor (Figure 9B). The DNA-nanopore was able to distinguish between
+complementary individual DNA strands of up to 30 nucleotides in length that only differed by a single
+base.[37, 38]
+Bayley and co-workers have also pioneered the use of so-called ‘molecular adapters’ such as
+cyclodextrin to enhance the recognition properties of αHL (Figures 10 and 11).[39] This approach
+allows analytes that would normally be too small to be recognised by wild-type αHL to be detected
+upon binding to the molecular adaptor lodged within the αHL channel. Recently, αHL mutants have
+been engineered to enhance the stability of the adapter•αHL complex. By using a mutant (M113R)7
+nanopore equipped with a heptakis-(6-deoxy-6-amino)-β-cyclodextrin adapter it was possible to
+distinguish between each of the four different ribonucleosides and 2’-deoxyribonucleoside
+5’-monophosphates (rNMPs and dNMPs).[40] NMPs could only be identified when the cyclodextrin
+adapter was bound in the pore. However despite the use of mutant pores, the adapter was only
+transiently bound within the pore (Figure 10B). This limitation was overcome by engineering a
+nanopore with a covalently attached cyclodextrin adapter to achieve a continual read-out at a high
+data acquisition rate (Figure 11).[41] The sensor was capable of detecting deoxynucleotide
+5’-monophosphate molecules with an accuracy of 99.8%, and was even able to discriminate
+methylated cytosine 5’-monophosphates from the standard DNA bases.
+Page 13 of 26
+Figure 10. Single-channel ionic current recordings showing nucleotide monophosphate recognition
+with a cyclodextrin nanopore adapter. A) Free channel (open pore). B) αHL nanopore with a
+noncovalently bound cyclodextrin adaptor. C) Subsequent binding and recognition of a nucleotide
+monophosphate.39
+Figure 11. A) Gaussian fits of current histograms corresponding to dGMP, dTMP, dAMP and dCMP
+recognition by an engineered nanopore with a covalently attached cyclodextrin adapter.40 B) Singlechannel
+recording from the permanent adapter nanopore displaying real-time recognition of discrete
+dGMP, dTMP, dAMP and dCMP current levels.
+It has been proposed that this approach could be developed as a novel method of DNA sequencing if
+used in combination with an exonuclease that processively cleaves mononucleotides one-by-one from
+the end of an ssDNA chain. In a step towards this aim, it was shown that highly accurate dNMP
+recognition was maintained under experimental conditions compatible with the exonuclease EcoExo
+I. At high potential (+180 mV) the dNMPs passed directly through the pore after being read, meaning
+Page 14 of 26
+that erroneous duplicated reads of the same dNMP molecule can be avoided. Nevertheless, several
+other problems must be solved before this approach can be adopted as a viable technique for DNA
+sequencing. Above all, each dNMP molecule must enter the nanopore in the same sequence that they
+are cleaved by the exonuclease.
+4. Investigation of peptides and proteins using nanopores
+The structure and function of peptides and proteins are intimately related, and only certain
+conformations may exert biological activity. In this section, nanopore approaches for investigating the
+structure, interactions, and activity of peptides, proteins and nucleic acid-manipulating enzymes will
+be described.
+4.1 Probing the structures of peptides and proteins
+The nanopore approach can be used as a tool to gain insight into the structure of peptides. Lee, Kraatz
+and co-workers synthesised peptides containing one, two, or three, repeats of the collagen-like
+sequence (Gly-Pro-Pro)n bearing positively charged ferrocene units at each end.[42] Circular dichroism
+(CD) spectra suggested that the peptide forms a triple helix when n = 3, a double-helix when n = 2,
+and has no dominant secondary or tertiary structure when n = 1. When these charged peptides were
+driven through the nanopore (Figure 12A), each peptide generated a unique blockage current vs.
+translocation duration fingerprint. The triple helix gave the largest current blockage and dwell times,
+while the double helix and the monomer gave rise to smaller current blockages and shorter dwell
+times. Importantly, the nanopore analysis revealed the presence of intermediate conformations that
+could not be detected using bulk spectroscopic techniques, such as CD or NMR, highlighting one of
+the major advantages of single-molecule methods.
+Figure 12. Structural analysis of A) simple peptides,42–44 B) zinc fingers45and C) protein folding by
+using nanopores.46
+Page 15 of 26
+Taking this one step further, the nanopore technique can also be used to study the folding and
+unfolding of proteins and peptides at single-molecule level. Lee and co-workers used the nanopore
+method to examine folding in Zif168, a zinc finger containing 28 amino acids (Figure 12B). In the
+folded state, Zif168 contains β-sheet, α-helix, and turn motifs, and is too large to enter the lumen of
+αHL. Meanwhile, in the absence of Zn2+ ions the peptide is unfolded and is able to translocate the
+pore.
+Current signature analysis in the absence of Zn2+ revealed two different populations, which were
+attributed either bumping (with small ion current blockages and long dwell times) or translocation
+events (with large ion current blockages and short dwell times).[45] Upon addition of an equimolar
+concentration of Zn2+, the ratio of translocation events to bumping events decreased. Further work
+examined the unfolding of an 86-residue protein as it translocated the αHL nanopore, establishing the
+generality of the approach for studying the conformations of peptides and small proteins.[47]
+Remarkably, it was found that a single mutation to the 86-residue protein was sufficient to
+dramatically change the blockage event profiles, demonstrating the sensitivity of this nanotechnology
+to structural changes in biomolecules. In the ultimate extension of this work, Pelta and co-workers
+examined the guanidinium-induced unfolding of the 370-residue (40 kDa) maltose binding protein
+(MBP) (Figure 12C).[46] In absence of the guanidinium, the native MBP protein could not enter the
+αHL pore, and no blockage events were observed. However, many current blockages emerged after
+the addition of 1.35 M guanidinium hydrochloride. The ion current traces revealed partially folded
+conformations, as evidenced by longer duration blockages at lower concentrations of guanidinium
+hydrochloride.
+4.2 Studying protein-binding interactions
+In addition to probing the underlying biophysics of nanopore translocation, αHL has served as a
+convenient model for studying the interactions of proteins and peptides with membrane-spanning β-
+barrels. Furthermore, modified αHL pores featuring specific binding sites have enabled to the
+investigation of specific protein binding interactions.
+Lee, Kraatz and co-workers synthesised a collection of negatively charged α-helical peptides and
+characterised their translocation through both αHL (Figure 12A).[43] The ratio of bumping to
+translocation events was related to the charge and dipole moment of the peptide in addition to the
+applied transmembrane potential. It was suggested that larger dipoles and electric fields facilitate the
+alignment of the peptide with the pore channel. Weaker fields and peptides with neutral charge or
+low-dipole moments were less likely to align with the pore channel, increasing the likelihood of
+bumping events. Furthermore, threading from the cis-side of the pore was favoured over threading
+Page 16 of 26
+from the trans-side, suggesting that the vestibule helps to align and funnel the peptides through the
+channel. For translocation events, both the ion current blockage and the blockage duration increased
+with the length of the peptides.[43] These results mirrored the work of Movileanu and co-workers, who
+found similar results for the translocation of cationic peptides through αHL channels.[44]
+It has been suggested that the hydrophilic interior of the αHL pore provides an energetic barrier to the
+translocation of hydrophobic peptides. Extending this reasoning, it was proposed that engineering
+negatively charged aspartic acid residues into the αHL β-barrel would reduce the energetic barrier to
+the transmembrane translocation of positively charged peptides.[52] Indeed, it was found that the
+incorporation of two rings of acidic residues at both the entrance and the exit of the β-barrel increased
+the rates of peptide association and dissociation. Movileanu and co-workers later exploited the same
+negatively charged αHL mutants to assemble a protein-protein complex between the αHL nanopore
+and the 110-amino acid protein barnase.[48] By fusing positively charged peptide fragments to the Nterminus
+of the barnase sequence, the protein could be trapped electrostatically within the lumen of
+the negatively charged αHL pore (Figure 13A). A series of mutations to the proteins facilitated a
+systematic investigation of protein-protein interactions at the single-molecule level.
+Figure 13. Nanopore-based single-molecule studies of protein interactions. A) Engineered α-
+haemolysin nanopore and pb2-barnase protein.49 B) Reversible binding of a mutant streptavidin to the
+biotin probe can be detected by using ion current recordings.50 The PEG linker is terminated with a
+biotin group and covalently tethered to a mutant cysteine residue within the α-haemolysin pore. C)
+Nanopore modified with a protein kinase inhibitor peptide for the detection of kinase binding.51, 52
+Page 17 of 26
+Researchers have developed a number of different nanopore-based approaches for detecting protein
+binding. For example, the biotin-terminated oligonucleotides discussed earlier have been exploited in
+the detection of avidin/streptavidin binding (Figure 6A to 6B).[2] In the absence of streptavidin, a
+ssDNA probe may freely translocate through the pore causing short-lived current blockades.
+However, in the presence of streptavidin long current blockades were observed. The concentration of
+these biotin-binding proteins could be measured because the ratio of short-lived to long-lived
+blockades is proportional to the concentration of streptavidin when excess biotinylated DNA was
+present. Bayley and co-workers have engineered nanopore detectors for streptavidin by covalently
+attaching a biotinylated polyethylene glycol (PEG) chain inside the lumen of the αHL pore (Figure
+13B).[49] The device was able to detect the reversible binding of single molecules of a mutant
+streptavidin on either side of the bilayer since the flexible 3.4 kDa polymer was free to traverse both
+sides of the bilayer. Binding events were detected as the decrease in the ion current passing through
+the pore on the sub-millisecond timescale.
+Extending these studies, Bayley and co-workers employed two different strategies to assemble a
+detector for a specific protein kinase enzyme. In the first study, a short PEG linker was used to attach
+a peptide inhibitor to the trans-entrance of the αHL pore, and in a follow-on study the same peptide
+inhibitor was genetically encoded within the sequence of one of the αHL monomers (Figure 13C).[50,
+51] When the catalytic subunit of cAMP-dependent protein kinase was bound to the inhibitor peptide
+attached to the αHL pore, a partial blockage of the ion current was observed, allowing the detection of
+binding events at the single-molecule level. The kinetic and thermodynamic parameters for the
+binding events were determined and compared well with ensemble measurements.
+4.3 Examining nucleic acid-manipulating proteins
+Nucleic acid-binding and manipulating proteins are exciting subjects within the field biophysics due
+to their essential roles in the maintenance and regulation of the genome. Nanopore-based approaches
+are able to complement existing single-molecule methods to reveal new information about the
+interactions and mechanisms of these intriguing proteins.
+Kasianowicz and co-workers examined the binding of bromodeoxyuridine polyclonal antibody to
+ssDNA terminated with a single bromodeoxyuridine base using αHL (Figure 14A).[2] Upon addition
+of the antibody, long current blockades were observed due to capture of the DNA•antibody complex
+in the nanopore.
+Page 18 of 26
+Figure 14. Nanopore detection of DNA–protein interactions. A) Binding of bromodeoxyuridine
+antibody to bromodeoxyuridine DNA in nanopore experiments.2 B) Study of ssDNA–exonuclease I
+complexes.53 C) Detection of viral RNA translocation enzyme ATPase P4 by using an α-haemolysin
+detector.54
+Recently, Akeson and co-workers used nanopore detection to study the interaction of ssDNA with
+exonuclease I (exo I) (Figure 14B).[53] The blockage current vs. dwell time signatures contained two
+clusters of events, one corresponded to free ssDNA, and the other to the ssDNA•exo I complexes. The
+rate of ssDNA translocation was reduced when the enzyme was bound to the ssDNA. Furthermore,
+single ssDNA•exo I complexes could be pulled apart by increasing the magnitude of the applied
+electric field. In this way, the ion current traces could be used to probe the dissociation rate of the
+complexes in a similar manner to earlier nanopore-based investigations of DNA unzipping (Figures 3
+and 6).
+ATPase P4 is a viral RNA packaging motor protein from bacteriophage ɸ8 that couples ATP
+hydrolysis to movement along RNA and has also been studied using αHL. More specifically,
+researchers used a nanopore detector to examine the reversible association of RNA•P4 enzyme
+complexes at single-molecule level (Figure 14C).[54] The oligoribonucleotide 5’-C25A25-3’ was
+recorded during its passage through αHL, giving rise to current blockades with an average duration of
+0.5 ms. After the addition of ATPase P4 much longer translocation events of between 10-1000 ms
+were observed, which were attributed to capture of enzyme-RNA complexes. The addition of ATP
+resulted in the disappearance of these long-duration events, suggesting the rapid dissociation of the
+RNA•enzyme complexes. The frequency of events was also dependent on the P4 enzyme
+concentration and the oligoribonucleotide length, which was consistent with the mechanism of ATPdependent
+RNA translocation. The rate of dissociation of the RNA•enzyme complexes was found to
+be dependent upon the force generated by the externally applied electric field, facilitating the study of
+the complexes under non-equilibrium conditions.
+Page 19 of 26
+DNA polymerases are fascinating enzymes that have an essential role in the replication and
+propagation of genetic information. A series of papers by Akeson, Lieberman and co-workers used
+nanopore detection to study the substrate binding dynamics of the Klenow Fragment from E. coli
+DNA polymerase I (Figure 15).[55-57] DNA hairpins terminated at their 3’-ends with
+dideoxynucleotides were captured under an applied potential in the nanopore. DNA polymerase
+enzymes were able to bind to these hairpins but the 3’-dideoxy-modification prevented the DNA
+polymerase from extending the DNA by incorporating deoxynucleotide triphosphates (dNTPs). Thus,
+ion current signatures and dwell times could be used to distinguish between the unbound hairpin
+(Figure 15A), the binary DNA•polymerase complex (Figure 15B), and the ternary
+DNA•polymerase•dNTP complexes (Figure 15C). Most strikingly of all, it was possible to identify
+whether a correctly templated, or a mismatched dNTP molecule was bound within the catalytic site of
+the individually captured DNA•polymerase complexes. Further insights into the mechanism of dNTP
+recognition by the DNA polymerase were gained when it was found that the dwell times of the ternary
+DNA•polymerase•dNTP complexes depended heavily on the presence of Mg2+ ions.[55] Later, realtime
+partitioning of dNTPs into and out of captured DNA•polymerase complexes was reported.[56]
+Adoption of a DNA rotaxane approach (similar to that shown in Figure 6) combined with precise,
+high-speed voltage control has also allowed rapid interrogation of DNA•polymerase complexes.[57]
+Figure 15. DNA polymerase–DNA binding and deoxynucleotide triphosphate dependence have been
+investigated by using nanopores.55–57
+In section 3.3 we introduced a supramolecular nanopore-rotaxane complex developed by Ghadiri and
+co-workers with the ability to measure the length of single molecule of DNA with single-base
+precision (Figure 8).[35] This device was configured such that the dsDNA region served as a primertemplate
+complex containing a 3-OH’ group onto which the templated addition of nucleotides could
+be catalysed by DNA polymerase. The device was then cycled between a ‘monitoring mode’, in
+which the length of the DNA primer molecule was measured with single-base accuracy, and an
+Page 20 of 26
+‘extension mode’ in which the dsDNA primer template complex was fully exposed to activity of the
+enzyme.
+Incorporation of a single base increased the ratio of DNA to PEG threaded through the channel
+resulting in stepwise increases in the ion current flowing through the channel (Figure 16). By using
+this method it was possible to resolve nine consecutive single-nucleotide primer extension steps and it
+is believed to be the first single-molecule method to resolve DNA polymerase activity with singlebase
+precision.[35]
+Figure 16. Monitoring DNA polymerase-catalysed extension of a single DNA primer molecule with
+single-nucleotide resolution by using a nanopore-based device.35 A) The double-stranded DNA region
+and the streptavidin cap serve as stoppers trapping the threaded DNA–PEG copolymer in place. B)
+DNA primer extension by DNA polymerase in the elongation mode results in the section of the
+ssDNA that was blocking the pore being replaced by an equal length of PEG polymer. This process
+can be monitored by using ion current recordings in the primer length monitoring mode (A). C)
+Because the PEG polymer blocks the ion current flowing through the pore less than the DNA, the
+base-by-base extension of a single molecule of DNA by DNA polymerase can be monitored from the
+corresponding stepped increases in the current.
+5. Summary & Outlook
+From its origins in the field of electrophysiology, the development of nanopore-based methods was
+initially spurred on by the prospect of sequencing single DNA molecules using α-haemolysin. The
+Page 21 of 26
+construction of nanopore-based devices that have been engineered to a particular task has enabled
+researchers to innovate and broadened their horizons in to the wider field of biophysics, where there
+has been an abundance of achievements. The structure and interactions of oligonucleotides, peptides
+and proteins have been probed extensively. Whilst some of the most exciting developments have
+provided insights into the function and dynamics of complicated biological processes at the singlemolecule
+level. Continued advances in nanopore-based techniques will continue to provide valuable
+contributions to biophysics, and the emerging fields of nanobiotechnology and synthetic biology.
+Page 22 of 26
+References
+[1] A. N. Kapanidis, T. Strick, Trends Biochem. Sci. 2009, 34, 234-243.
+[2] J J. J. Kasianowicz, S. E. Henrickson, H. H. Weetall, B. Robertson, Anal. Chem.2001, 73, 2268-
+2272.
+[3] H. Bayley, P. S. Cremer, Nature 2001, 413, 226-230.
+[4] H. Bayley, O. Braha, L.-Q. Gu, Adv. Mat. 2000, 12, 139-142.
+[5] D. Branton, D. W. Deamer, A. Marziali, H. Bayley, S. A. Benner, T. Butler, M. Di Ventra, S.
+Garaj, A. Hibbs, X. Huang, S. B. Jovanovich, P. S. Krstic, S. Lindsay, X. S. Ling, C. H.
+Mastrangelo, A. Meller, J. S. Oliver, Y. V. Pershin, J. M. Ramsey, R. Riehn, G. V. Soni, V.
+Tabard-Cossa, M. Wanunu, M. Wiggin, J. A. Schloss, Nat. Biotechnol. 2008, 26, 1146-1153.
+[6] A. Meller, L. Nivon, D. Branton, Phys. Rev. Lett. 2001, 86, 3435-3438.
+[7] C. Dekker, Nat. Nanotechnol. 2007, 2, 209-215.
+[8] R. F. Purnell, K. K. Mehta, J. J. Schmidt, Nano Letters 2008, 8, 3029-3034.
+[9] L. Song, M. R. Hobaugh, C. Shustak, S. Cheley, H. Bayley, J. E. Gouaux, Science 1996, 274,
+1859-1886.
+[10] J. Schmidt, J. Mater. Chem. 2005, 15, 831-840.
+[11] P. Mueller, D. O. Rudin, H. T. Tien, W. C. Wescott, Nature 1962, 194, 979-980.
+[12] M. Montal, P. Mueller, Proc. Nat. Acad. Sci. U. S. A. 1972, 69, 3561-3556.
+[13] E. Neher, B. Sakmann, J. H. Steinbach, Pfluegers Archiv. 1978, 375, 219-228.
+[14] D. J. A. Wyllie, Neuromethods 2002, 35, 69-109.
+[15] J. J. Kasianowicz, E. Brandin, D. Branton, D. Deamer, Proc. Natl. Acad. Sci. U. S. A. 1996, 93,
+13770-13773.
+[16] A. Meller, L. Nivon, E. Brandin, J. Golovchenko, D. Branton, Proc. Natl. Acad. Sci.U. S. A.
+2000, 97, 1079-1084.
+[17] J. Mathe, H. Visram, V. Viasnoff, Y. Rabin, A. Meller, Biophys. J. 2004, 87, 3205-3212.
+Page 23 of 26
+[18] S. Winters-Hilt, W. Vercoutere, V. S. DeGuzman, D. Deamer, M. Akeson, D. Haussler, Biophys.
+J. 2003, 84, 967-976.
+[19] W. A. Vercoutere, S. Winters-Hilt, V. S. DeGuzman, D. Deamer, S. E. Ridino, J. T. Rodgers, H.
+E. Olsen, A. Marziali, M. Akeson, Nucleic Acids Res. 2003, 31, 1311-1318.
+[20] A. F. Sauer-Budge, J. A. Nyamwanda, D. K. Lubensky, D. Branton, Phys. Rev. Lett. 2003, 90,
+238101/238101-238101/238104.
+[21] J. W. Shim, Q. Tan, L.-Q. Gu, Nucleic Acids Res. 2009, 37, 972-982.
+[22] W. Vercoutere, S. Winters-Hilt, H. Olsen, D. Deamer, D. Haussler, M. Akeson, Nat. Biotechnol.
+2001, 19, 681.
+[23] S. Neeidle, S. Balasubramanian, Quadruplex Nucleic Acids, Royal Society of Chemistry,
+Cambridge (2006).
+[24] M. R. Stratton, P. J. Campbell, P. A. Futreal, Nature 2009, 458, 719-724.
+[25] M. Akeson, D. Branton, J. J. Kasianowicz, E. Brandin, D. W. Deamer, Biophys. J. 1999, 77,
+3227-3233.
+[26] T. Z. Butler, J. H. Gundlach, M. A. Troll, Biophys. J. 2006, 90, 190-199.
+[27] J. Mathe, A. Aksimentiev, D. R. Nelson, K. Schulten, A. Meller, Proc. Nat. Acad. Sci. U. S. A.
+2005, 102, 12377-12382.
+[28] N. Ashkenasy, J. Sanchez-Quesada, H. Bayley, M. R. Ghadiri, Angew. Chem. 2005, 117, 1425–
+1428; Angew. Chem. Int. Ed. 2005, 44, 1401-1404.
+[29] A. Somoza, Chem. Soc. Rev. 2008, 37, 2668-2675.
+[30] J. Nakane, M. Wiggin, A. Marziali, Biophys. J. 2004, 87, 3618.
+[31] D. Stoddart, A. J. Heron, E. Mikhailova, G. Maglia, H. Bayley, Proc. Natl. Acad. Sci. U. S. A.
+2009, 106, 7702-7007.
+[32] J. Sanchez-Quesada, A. Saghatelian, S. Cheley, H. Bayley, M. R. Ghadiri, Angew. Chem. 2004,
+116, 3125–3129; Angew. Chem., Int. Ed. 2004, 43, 3063-3067.
+[33] D. B. Amabilino, J. F. Stoddart, Chem. Rev. 1995, 95, 2725-2829.
+Page 24 of 26
+[34] E. R. Kay, D. A. Leigh, F. Zerbetto, Angew. Chem. 2006, 119, 72–196; Angew. Chem. Int. Ed.
+2007, 46, 72-191.
+[35] S. L. Cockroft, J. Chu, M. Amorin, M. R. Ghadiri, J. Am. Chem. Soc. 2008, 130, 818-820.
+[36] N. Mitchell, S. Howorka, Angew. Chem. 2008, 120, 5647–5650; Angew. Chem. Int. Ed. 2008, 47,
+5565-5568.
+[37] S. Howorka, S. Cheley, H. Bayley, Nat. Biotechnol. 2001, 19, 636-639
+[38] S. Howorka, L. Movileanu, O. Braha, H. Bayley, Proc. Nat. Acad. Sci. U. S. A. 2001, 98, 12996-
+13001.
+[39] L. Q. Gu, O. Braha, S. Conlan, S. Cheley, H. Bayley, Nature 1999, 398, 686-690.
+[40] Y. Astier, O. Braha, H. Bayley, J. Am. Chem. Soc. 2006, 128, 1705-1710.
+[41] J. Clarke, H.-C. Wu, L. Jayasinghe, A. Patel, S. Reid, H. Bayley, Nat. Nanotechnol. 2009, 4, 265-
+270.
+[42] T. C. Sutherland, Y.-T. Long, R.-I. Stefureac, I. Bediako-Amoa, H.-B. Kraatz, J. S. Lee, Nano
+Lett. 2004, 4, 1273-1277.
+[43] R. Stefureac, Y.-T. Long, H.-B. Kraatz, P. Howard, J. S. Lee, Biochem. 2006, 45, 9172-9179.
+[44] L. Movileanu, J. P. Schmittschmitt, J. M. Scholtz, H. Bayley, Biophys. J. 2005, 89, 1030-1045.
+[45] R. I. Stefureac, J. S. Lee, Small 2008, 4, 1646-1650.
+[46] G. Oukhaled, J. Mathe, A. L. Biance, L. Bacri, J. M. Betton, D. Lairez, J. Pelta, L. Auvray, Phys.
+Rev. Lett. 2007, 98, 158101.
+[47] R. Stefureac, L. Waldner, P. Howard, J. S. Lee, Small 2008, 4, 59-63.
+[48] M. M. Mohammad, S. Prakash, A. Matouschek, L. Movileanu, J. Am. Chem. Soc. 2008, 130,
+4081-4088.
+[49] L. Movileanu, S. Howorka, O. Braha, H. Bayley, Nat. Biotechnol. 2000, 18, 1091-1095.
+[50] H. Xie, O. Braha, L.-Q. Gu, S. Cheley, H. Bayley, Chem. Biol. 2005, 12, 109-120.
+[51] S. Cheley, H. Xie, H. Bayley, ChemBioChem 2006, 7, 1923-1927.
+Page 25 of 26
+[52] A. J. Wolfe, M. M. Mohammad, S. Cheley, H. Bayley, L. Movileanu, J. Am. Chem. Soc. 2007,
+129, 14034-14041.
+[53] B. Hornblower, A. Coombs, R. D. Whitaker, A. Kolomeisky, S. J. Picone, A. Meller, M. Akeson,
+Nat. Methods 2007, 4, 315-317.
+[54] Y. Astier, D. E. Kainov, H. Bayley, R. Tuma, S. Howorka, ChemPhysChem 2007, 8, 2189-2194.
+[55] S. Benner, R. J. A. Chen, N. A. Wilson, R. Abu-Shumays, N. Hurt, K. R. Lieberman, D. W.
+Deamer, W. B. Dunbar, M. Akeson, Nat. Nanotechnol. 2007, 2, 718-724.
+[56] N. Hurt, H. Wang, M. Akeson, K. R. Lieberman, J. Am. Chem. Soc. 2009, 131, 3772-3778.
+[57] N. A. Wilson, R. Abu-Shumays, B. Gyarfas, H. Wang, K. R. Lieberman, M. Akeson, W. B.
+Dunbar, ACS Nano 2009, 3, 995-1003.

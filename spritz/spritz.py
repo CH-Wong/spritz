@@ -7,9 +7,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import animation
 import button
+import chardet
+import string
 
 def updatefig(num):
-    time_text = ax.text(offsets[num],0,words[num],fontsize = 50)
+    time_text = ax.text(offsets[num],0,words[num],fontsize = fontsize)
     anim.event_source.interval = times[num]
     return time_text,
 
@@ -23,14 +25,12 @@ def import_words(filename):
     # This with statement ensures the file is only open for a certain amount of time.
     # This can save RAM and processing speeds in larger projects
     # Rename the sprits.txt as inputfile within this with statement
-    with open(filename) as inputfile:
+    with open(filename,"r",encoding = "utf-8") as inputfile:
 
         # Loop through each line in the defined inputfile variable
         for line in inputfile:
-
             # Create a new list from each line, and split it at each space " "
             for word in line.strip().split(" "):
-
                 # Individually append every word to the results variable
                 results.append(word)
     return(results)
@@ -40,8 +40,8 @@ def assign_times(wordlist,speed):
     """Converts word list to a wait_time list to be used as timing variable.b
     Returns a list of timings in seconds. Uses the speed variable to assign
     the desired words/min.
-    .       = 1.10
-    ' '     = 1.50
+    .       = 2.00
+    ' '     = 2.20
     word    = 1.00
     """
 
@@ -61,41 +61,55 @@ def assign_times(wordlist,speed):
     return(time_list)
 
 def offset_func(x):
-    max_offset = 2
-    x_half = 4
-    offset = -max_offset/(1+np.exp(-(x-x_half)))
+    l_0 = 15 # Word length
+    l_offset = 3 # offset at legnth = l_0
+    k = np.log(l_offset + 1)/l_0
+    offset = np.exp(k*x) - 1
     return(offset)
 
 def assign_offsets(wordlist):
     offsetlist = []
     for word in wordlist:
-
+        # [".","!","?",",",";",":","(",")"]
         length = len(word)
-        if any([sign in word for sign in [".","!","?",",",";",":"]]):
+        if any([sign in word for sign in string.punctuation]):
             length -= 1
-
-        offset = offset_func(length)
+        offset = -0.5*length + offset_func(length)
+        # print(word,length,offset)
         offsetlist.append(offset)
 
     return(offsetlist)
 
 
-message = "Please enter your desired words/minute:"
-user_input = button.request_window(message)
-wpm = int(user_input.result)
-
-
-words = import_words("datafiles/lorem.txt")
-times = assign_times(words,wpm)
+## File
+filename = button.select_file("Select .txt file for spritzing")
+words = import_words(filename)
 offsets = assign_offsets(words)
 
+user_input = button.request_window("Please enter your desired words/minute:")
+wpm = int(user_input.result)
+times = assign_times(words,wpm)
 
-fig = plt.figure(figsize = (10,10), dpi = 80)
+## Intialize figure
+fig = plt.figure(figsize = (10,5), dpi = 80)
 ax = fig.add_subplot(111)
+xlim = (-10,15)
 plt.axis("off")
-ax.set_xlim(-10,10)
-ax.set_ylim(-10,10)
-time_text = ax.text(0,0,"")
+ax.set_xlim(xlim)
+ax.set_ylim(-5,5)
 
+
+
+## Calculate fontsize based on dpi and x-axis width to ensure proper shifting
+# Get box pixel dimensions
+bbox = ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted())
+width = bbox.width*fig.dpi
+
+fontsize = (3/2)*width/(xlim[1]-xlim[0])
+
+## Iniialize time_text
+time_text = ax.text(0,0,"",)
+
+## Start animation engine
 anim = animation.FuncAnimation(fig, updatefig, frames=len(words)-1,blit = True)
 plt.show()
